@@ -28,7 +28,7 @@ Para ello, se plantean dos estrategias para esa busqueda. Por un lado, utilizar 
 
 Para la elección de los mejores hiperparámetros de cada uno de ellos, se utiliza una búsqueda exaustiva mediante la técnica de GridSearch. 
 
-En la notebook [03_modelo.ipynb] se encuentra detallado todo el análsis realizado para llegar al mejor modelo.
+En la notebook [03_modelo](03_modelo.ipynb) se encuentra detallado todo el análsis realizado para llegar al mejor modelo.
 
 ## **Conclusiones**
 
