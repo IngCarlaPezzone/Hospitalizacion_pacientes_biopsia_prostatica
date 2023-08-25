@@ -28,10 +28,10 @@ Para ello, se plantean dos estrategias para esa busqueda. Por un lado, utilizar 
 
 Para la elección de los mejores hiperparámetros de cada uno de ellos, se utiliza una búsqueda exaustiva mediante la técnica de GridSearch. 
 
-En la notebook [03_modelo](03_modelo.ipynb) se encuentra detallado todo el análsis realizado para llegar al mejor modelo.
+En la notebook [03_modelo](03_modelo.ipynb) se encuentra detallado todo el análisis realizado para llegar al mejor modelo.
 
 ## **Conclusiones**
 
-Se logró encontrar un modelo de clasificación que permite la clasificación de la hospitalización o no de un paciente a partir de conocer sus antecedentes, como la edad o relacionados a la intervención en sí de la biopsia, así como morbilidad propia del paciente o cuestiones relacionadas con la aparición de complicaciones infecciosas. El mejor modelo que se obtuvo fue un Árbol de Decisión de máxima profundidad de 19 y con criterio Gini, pero previo se tuvo que hacer una reducción de la dimensionalidad, encontrando 8 Componentes la mejor opción entre las evaluadas. 
+Se logró encontrar un modelo de clasificación que permite la clasificación de la hospitalización o no de un paciente a partir de conocer sus antecedentes, como la edad o relacionados a la intervención en sí de la biopsia, así como morbilidad propia del paciente o cuestiones relacionadas con la aparición de complicaciones infecciosas. El mejor modelo que se obtuvo fue un Árbol de Decisión de máxima profundidad de 19 y utilizando criterio de decisión de Gini, pero previo se tuvo que hacer una reducción de la dimensionalidad utilizando PCA, encontrando 8 Componentes como la mejor opción entre las evaluadas. 
 
 Para este modelo se utilizó la métrica de evaluación F1 Score (Test_F1) dado que combina la precisión (resultados correctos sobre el total de muestras seleccionadas) y la exhaustividad (resultados correctos por sobre los resultados que se buscan identificar) de manera de mantener una relación entre las dos. Se consiguió un F1 Score de 0.92, siendo un muy buen rendimiento considerando el gran desbalance de la clase objetivo.
